@@ -1,7 +1,7 @@
+import { BaseForm2 } from './../../../shared/utils/base-form copy';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { BaseForm } from 'src/app/shared/utils/base-form';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    public baseForm: BaseForm,
+    public baseForm: BaseForm2,
     private router: Router
   ) {}
 
