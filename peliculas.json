@@ -1,0 +1,18 @@
+{
+  "peliculas": [
+    {
+      "Nombre": "La Madre",
+      "Director": "James Cameron",
+      "A�o": "2022",
+      "Descripci�n": "Una asesina mortal sale de su escondite para proteger a la hija a la que entreg� a�os antes, mientras hu�a de hombres peligrosos",
+      "id": 1
+    },
+    {
+      "Nombre": "La Sirenita",
+      "Director": "Blake Harris",
+      "A�o": "2020",
+      "Descripci�n": "Un joven periodista y su sobrina descubren una bella y encantadora criatura marina, y creen que se trata de una sirena real.",
+      "id": 3
+    }
+  ]
+}

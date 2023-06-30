@@ -1,8 +1,8 @@
+import { ReCaptchaV3Service } from 'ng-recaptcha';
 import { Router } from '@angular/router';
 import { OnInit, Component } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
 import { BaseForm2 } from './../../../shared/utils/base-form copy';
-import { ReCaptchaV3Service } from 'ng-recaptcha';
 
 @Component({
   selector: 'app-login',

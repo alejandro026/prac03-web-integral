@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": {
+        "id": 1,
+        "name": "Administrator",
+        "permissions": [
+          "viewReports",
+          "editReports",
+          "deleteReports"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user",
+      "role": {
+        "id": 2,
+        "name": "User",
+        "permissions": [
+          "viewReports"
+        ]
+      }
+    }
+  ]
+}
