@@ -1,24 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
 
-  usuario:string = localStorage.getItem('usuario')!;
+  data: any = {};//Datos del usuario
 
-  constructor(private router:Router){
-    this.usuario = localStorage.getItem('usuario')!;
+  constructor(private router:Router,
+    private authService:AuthService){ }
+
+
+  ngOnInit(): void {
+    this.authService.tokenData$.subscribe((data:any)=>{
+      this.data = data;
+    })
   }
 
-
-  logout(){
-    localStorage.clear();
-    this.usuario="";
-    this.router.navigate(['/login']);
+  //Cerrar sesion
+  onLogout(){
+    this.authService.logout();
+    this.data= null;
   }
 
 }

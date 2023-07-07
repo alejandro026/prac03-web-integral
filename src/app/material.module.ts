@@ -6,6 +6,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 const myMpdules: any=[
   MatButtonModule,
@@ -14,7 +16,8 @@ const myMpdules: any=[
   MatIconModule,
   MatGridListModule,
   ReactiveFormsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSnackBarModule,
 ];
 
 

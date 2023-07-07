@@ -9,6 +9,7 @@ import { MaterialModule } from './material.module';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module  } from 'ng-recaptcha';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module  } from 'ng-recaptcha';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RecaptchaV3Module
+    RecaptchaV3Module,
+    HttpClientModule,
   ],
   providers: [
     {
